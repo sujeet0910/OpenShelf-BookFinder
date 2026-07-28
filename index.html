@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Openshelf</title>
+    <link rel="stylesheet" href="css/style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+        <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/> 
+</head>
+<body>
+    <main>
+       <p id="welcome">Welcome to your personal library navigator</p>
+       <img src="assets/images/logon no bg.png" class="logo">
+       <h1>OpenShelf Bookfinder</h1>
+        <div class="search-box">
+    <button id="searchBtn" class="searchBtn">
+        <i class="ri-search-line"></i>
+    </button>
+    <input
+        type="text"
+        id="search"
+        placeholder="Search for books by title or author..."
+    >
+</div>
+        <p id="explore">Explore reading worlds</p>
+        <div id="buttons">
+            <div id="btn1" class="btn">Fiction
+            <img src="assets/images/fiction.png" alt="">
+            </div>
+            <div id="btn2" class="btn">Science
+            <img src="assets/images/science-report.png" alt="">
+            </div>
+            <div id="btn3" class="btn">History
+                <img src="assets/images/history-book.png" alt="">
+            </div>
+        </div>
+        <div id="loader" class="loader">
+            
+        </div>
+       <div id="bookContainer">
+        
+       </div>
+       <div id="bookModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal">&times;</span>
+            <div id="modalBody">
+
+            </div>
+        </div>
+       </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
