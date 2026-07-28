@@ -323,52 +323,22 @@ main h1{
     font-size: 18px;
     color: #fffefe;
 }
-/* Responsive */
 
-@media (max-width: 480px) {
-    main h1{
-        font-size: 20px;
-    }
 
-    #welcome{
-        font-size: 15px;
-    }
-
-    .logo{
-        height: 70px;
-        width: 95px;
-        margin-top: 15px;
-    }
-
-    .search-box input,
-    .searchBtn{
-        padding: 14px;
-    }
-
-    .btn{
-        width: 100%;
-        height: 48px;
-    }
-
-    #bookContainer{
-        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-        gap: 15px;
-    }
-
-    .book-card{
-        min-height: 280px;
-        padding: 8px;
-    }
-
-    .book-card img{
-        height: 170px;
-    }
-
-    .book-card h2{
-        font-size: 14px;
-    }
-
-    .modal-content{
-        padding: 14px;
-    }
+@media (max-width:768px){
+body{overflow-x:hidden;}
+header,main,section,footer{padding-left:16px;padding-right:16px;}
+main h1{font-size:2rem;line-height:1.2;text-align:center;}
+#welcome{text-align:center;font-size:1rem;}
+.search-box{flex-direction:column;gap:12px;align-items:stretch;}
+.search-box input,.searchBtn,.btn{width:100%;}
+#bookContainer{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;}
+.book-card{min-height:auto;padding:12px;}
+.book-card img{height:200px;}
+.modal-content{width:95%;padding:18px;max-height:92vh;}
+.modal-book{flex-direction:column;align-items:center;}
+.modal-left,.modal-right{width:100%;text-align:center;}
+.modal-left img{margin:0 auto;}
+.book-info td{font-size:16px;}
+.description-box{max-height:180px;}
 }
